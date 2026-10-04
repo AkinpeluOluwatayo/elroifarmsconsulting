@@ -1,0 +1,65 @@
+/* Custom styles for El-Roi Farms Consulting */
+
+/* Scroll behavior */
+html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Base custom utility classes */
+.font-display {
+    font-family: 'Outfit', 'Inter', system-ui, sans-serif;
+}
+
+/* Glassmorphism & subtle overlays */
+.glass-nav {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.gold-gradient-text {
+    background: linear-gradient(135deg, #B45309 0%, #D97706 50%, #F59E0B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+    background: linear-gradient(135deg, #D97706 0%, #B45309 100%);
+}
+
+.gold-gradient-bg-hover:hover {
+    background: linear-gradient(135deg, #B45309 0%, #92400E 100%);
+}
+
+.emerald-gradient-bg {
+    background: linear-gradient(135deg, #064E3B 0%, #022C22 100%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #F5F5F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #D97706;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #B45309;
+}
+
+/* Focus styles for accessibility */
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: 2px solid #D97706;
+    outline-offset: 2px;
+}
+
+/* Pathway Card Active state */
+.pathway-card.active {
+    border-color: #D97706;
+    background-color: #FEF3C7;
+    box-shadow: 0 10px 25px -5px rgba(217, 119, 6, 0.15);
+}
